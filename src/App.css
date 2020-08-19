@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  grid-column: 1/-1;
+}
+nav ul{
+  padding: 0;
+  margin: 0;
+  display: grid;
+  justify-items: flex-start;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  grid-gap: 5px;
+
+}
+
+nav li{
+  list-style: none;
+}
+
+nav li button{
+  background-color: rgb(9, 9, 70);
+  padding: 10px 20px;
+  border:0;
+  border-radius: 5px;
+  color: white;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  grid-gap: 10px 40px;
+}
+
+.messageSender {
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: 45px 35px 1fr;
+  background-color: rgb(57, 100, 136);
+  grid-gap:10px;
+}
+
+.messageInput {
+  background-color: gray;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.messageInput input,button {
+  border:0;
+  padding:5px 10px;
+  border-radius: 5px;
+}
+
+.messageInput button {
+  background-color: transparent;
+  color:white;
+}
+
+.generalContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgb(9, 9, 70);
+  color:white;
+  padding:10px;
+  box-sizing: border-box;
+  grid-gap: 5px;
+
+}
+
+.generalContainer h1 {
+  grid-column: 1/-1;
+  text-align: center;
+  background-color: #ffffff2e;
+  border-radius: 5px;
+}
+
+
+.messageSenderList {
+  padding: 15px;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  color: white;
+  background-color: #ffffff29;
+  border-radius: 5px;
+}
